@@ -37,6 +37,17 @@ public class OutOfMemoryTest {
     public static void main(String[] args) {
         OutOfMemoryTest outOfMemoryTest = new OutOfMemoryTest();
         //outOfMemoryTest.method1();
-        outOfMemoryTest.method2();
+        //outOfMemoryTest.method2();
+
+        //java8环境下
+        String value1 = "a";
+        String value2 = "a";
+        //true
+        System.out.println(value1 == value2);
+        String value3 = new String("a");
+        //false
+        System.out.println(value1 == value3);
+        //true
+        System.out.println(value1 == value3.intern());
     }
 }
