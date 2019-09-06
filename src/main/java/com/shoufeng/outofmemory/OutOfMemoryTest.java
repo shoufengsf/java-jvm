@@ -36,7 +36,7 @@ public class OutOfMemoryTest {
 
     public static void main(String[] args) {
         OutOfMemoryTest outOfMemoryTest = new OutOfMemoryTest();
-        //outOfMemoryTest.method1();
+        outOfMemoryTest.method1();
         //outOfMemoryTest.method2();
 
         //java8环境下
